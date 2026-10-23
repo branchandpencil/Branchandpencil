@@ -1,15 +1,18 @@
-Website Coming Soon!<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" class="scroll-smooth">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Branch & Pencil | Storybook Artist & Illustrator</title>
+    
     <!-- Tailwind CSS -->
     <script src="https://cdn.tailwindcss.com"></script>
+    
     <!-- Google Fonts -->
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;700&family=Comfortaa:wght@400;600;700&family=Marcellus&display=swap" rel="stylesheet">
+    
     <!-- FontAwesome Icons -->
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 
@@ -38,16 +41,15 @@ Website Coming Soon!<!DOCTYPE html>
     </script>
 
     <style>
-        /* Custom magical glow animations & storybook aesthetics */
         body {
             background-color: #2B1E17;
             color: #ECE3CE;
             font-family: 'Comfortaa', cursive, sans-serif;
-            background-image: radial-gradient(circle at 50% 0%, #3A4D39 0%, #2B1E17 70%);
+            background-image: radial-gradient(circle at 50% 0%, #3A4D39 0%, #2B1E17 75%);
         }
 
         .lantern-glow {
-            box-shadow: 0 0 40px 10px rgba(255, 177, 0, 0.25);
+            box-shadow: 0 0 40px 10px rgba(255, 177, 0, 0.2);
         }
 
         .gold-border-glow {
@@ -61,143 +63,174 @@ Website Coming Soon!<!DOCTYPE html>
             transform: translateY(-2px);
         }
 
-        /* SVG Glow Effects */
-        .glow-element {
-            filter: drop-shadow(0px 0px 8px rgba(255, 177, 0, 0.7));
-        }
-
-        @keyframes pulseGlow {
-            0%, 100% { opacity: 0.8; transform: scale(1); }
-            50% { opacity: 1; transform: scale(1.05); }
-        }
-
-        .pulse-amber {
-            animation: pulseGlow 4s infinite ease-in-out;
+        .art-frame {
+            border: 1px solid rgba(229, 169, 60, 0.4);
+            box-shadow: inset 0 0 20px rgba(28, 19, 14, 0.8);
         }
     </style>
 </head>
 <body class="min-h-screen flex flex-col justify-between selection:bg-amberGlow selection:text-bark">
 
-    <!-- Ambient Forest Background Overlay -->
-    <div class="fixed inset-0 pointer-events-none z-0 opacity-20 bg-[radial-gradient(#E5A93C_1px,transparent_1px)] [background-size:32px_32px]"></div>
+    <!-- Ambient Subtle Star/Parchment Texture Overlay -->
+    <div class="fixed inset-0 pointer-events-none z-0 opacity-15 bg-[radial-gradient(#E5A93C_1px,transparent_1px)] [background-size:32px_32px]"></div>
 
     <!-- MAIN WRAPPER -->
     <div class="relative z-10 flex flex-col min-h-screen">
 
         <!-- HEADER / NAVIGATION -->
-        <header class="w-full pt-8 pb-4 px-6 text-center border-b border-warmGold/20 backdrop-blur-sm bg-bark/40 sticky top-0 z-50">
-            <div class="max-w-4xl mx-auto flex flex-col items-center">
-                <div class="flex items-center gap-3 mb-1">
+        <header class="w-full py-6 px-6 text-center border-b border-warmGold/20 backdrop-blur-md bg-bark/60 sticky top-0 z-50">
+            <div class="max-w-5xl mx-auto flex flex-col sm:flex-row items-center justify-between gap-4">
+                <div class="flex items-center gap-3">
                     <i class="fa-solid fa-tree text-amberGlow text-2xl"></i>
-                    <h1 class="font-serif text-3xl sm:text-4xl md:text-5xl font-bold tracking-wider text-parchment drop-shadow-md">
+                    <a href="#" class="font-serif text-2xl sm:text-3xl font-bold tracking-wider text-parchment hover:text-amberGlow transition-colors">
                         Branch & Pencil
-                    </h1>
+                    </a>
                     <i class="fa-solid fa-pen-nib text-amberGlow text-2xl"></i>
                 </div>
-                <p class="font-heading italic text-warmGold text-sm sm:text-base tracking-widest mt-1">
-                    "Everything has a story"
-                </p>
+                
+                <nav class="flex items-center gap-6 text-xs sm:text-sm font-heading tracking-widest text-softCream">
+                    <a href="#about" class="hover:text-amberGlow transition-colors">About</a>
+                    <a href="#featured" class="hover:text-amberGlow transition-colors">Featured Art</a>
+                    <a href="#gallery" class="hover:text-amberGlow transition-colors">Gallery</a>
+                    <a href="#connect" class="hover:text-amberGlow transition-colors">Connect</a>
+                </nav>
             </div>
         </header>
 
         <!-- MAIN CONTENT SECTION -->
-        <main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 py-10 w-full space-y-16">
+        <main class="flex-grow max-w-4xl mx-auto px-4 sm:px-6 py-12 w-full space-y-20">
 
-            <!-- HERO STORYBOOK SHOWCASE -->
-            <section class="relative rounded-3xl p-1 bg-gradient-to-b from-warmGold/40 via-moss/50 to-bark/80 lantern-glow">
-                <div class="bg-cozyShadow/90 rounded-[22px] p-6 sm:p-8 overflow-hidden relative">
+            <!-- ABOUT / WELCOME SECTION -->
+            <section id="about" class="text-center space-y-4">
+                <p class="font-heading italic text-warmGold text-base sm:text-lg tracking-widest">
+                    "Everything has a story"
+                </p>
+                <h1 class="font-serif text-3xl sm:text-5xl font-bold text-parchment leading-tight">
+                    Storybook Illustration & Visual Arts - Full Website Coming Soon!
+                </h1>
+                <p class="text-xs sm:text-base text-softCream/90 max-w-2xl mx-auto leading-relaxed pt-2">
+                    Welcome to Branch & Pencil. I craft whimsical character studies, storybook concepts, and observational drawings line by line.
+                </p>
+            </section>
+
+            <!-- FEATURED ARTWORK CONTAINER (HERO SLOT) -->
+            <section id="featured" class="relative rounded-3xl p-1 bg-gradient-to-b from-warmGold/40 via-moss/50 to-bark/80 lantern-glow">
+                <div class="bg-cozyShadow/95 rounded-[22px] p-6 sm:p-8 overflow-hidden relative">
                     
-                    <!-- Top Badge -->
                     <div class="flex items-center justify-between mb-6">
                         <span class="inline-flex items-center gap-2 px-3 py-1 rounded-full bg-moss/60 border border-warmGold/30 text-xs text-softCream font-heading">
-                            <i class="fa-solid fa-sparkles text-amberGlow"></i> Featured Illustration
+                            <i class="fa-solid fa-sparkles text-amberGlow"></i> Featured Showcase
                         </span>
                         <span class="text-xs text-warmGold/70 font-mono">Original Work</span>
                     </div>
 
-                    <!-- HERO ARTWORK DISPLAY (SVG Storybook Illustration) -->
-                    <div class="relative w-full h-72 sm:h-96 rounded-2xl overflow-hidden bg-gradient-to-b from-bark to-moss/80 border border-warmGold/20 flex items-center justify-center group">
+                    <!-- ARTWORK CONTAINER -->
+                    <div class="relative w-full min-h-[320px] sm:min-h-[460px] rounded-2xl overflow-hidden bg-bark/80 art-frame flex items-center justify-center group">
                         
-                        <!-- Atmospheric SVG Art: Lantern Possum & Tree Owl -->
-                        <svg class="w-full h-full object-cover" viewBox="0 0 800 500" fill="none" xmlns="http://www.w3.org/2000/svg">
-                            <!-- Background Night Sky & Moon -->
-                            <rect width="800" height="500" fill="#1C130E"/>
-                            <circle cx="680" cy="90" r="60" fill="#ECE3CE" fill-opacity="0.15"/>
-                            <circle cx="680" cy="90" r="45" fill="#ECE3CE" fill-opacity="0.25"/>
+                        <!-- 
+                            YOUR ARTWORK FILE GOES HERE:
+                            Replace 'hero-art.jpg' with your actual image filename inside your GitHub repository.
+                        -->
+                        <img src="hero-art.jpg" 
+                             alt="Featured Original Artwork by Branch Campbell" 
+                             class="w-full h-full object-contain max-h-[500px] z-10 relative"
+                             onerror="this.onerror=null; this.classList.add('hidden'); document.getElementById('hero-placeholder').classList.remove('hidden');" />
 
-                            <!-- Tree Canopy & Trunk -->
-                            <path d="M-50 500 C 150 400, 200 200, 180 0 L 0 0 L -50 500 Z" fill="#2B1E17"/>
-                            <path d="M 850 500 C 650 420, 600 150, 650 0 L 850 0 Z" fill="#2B1E17"/>
-                            <!-- Branch Canopy Overhead -->
-                            <path d="M 120 120 Q 400 -20 680 100 Q 400 30 120 120 Z" fill="#3A4D39" fill-opacity="0.9"/>
-
-                            <!-- Hollow Tree Knot (Owl's Home) -->
-                            <ellipse cx="200" cy="240" rx="45" ry="60" fill="#1A110B" stroke="#3A4D39" stroke-width="4"/>
-                            
-                            <!-- Owl inside Hollow -->
-                            <g transform="translate(170, 205)">
-                                <ellipse cx="30" cy="40" rx="25" ry="30" fill="#739072"/>
-                                <circle cx="20" cy="30" r="10" fill="#FDFBF7"/>
-                                <circle cx="40" cy="30" r="10" fill="#FDFBF7"/>
-                                <circle cx="20" cy="30" r="4" fill="#2B1E17"/>
-                                <circle cx="40" cy="30" r="4" fill="#2B1E17"/>
-                                <polygon points="30,35 26,42 34,42" fill="#E5A93C"/>
-                            </g>
-
-                            <!-- Warm Lantern Glow Effect -->
-                            <circle cx="480" cy="340" r="180" fill="url(#lanternGlow)" class="pulse-amber"/>
-
-                            <!-- Possum Holding Lantern -->
-                            <g transform="translate(400, 280)">
-                                <path d="M -40 120 Q -80 100 -100 130" stroke="#ECE3CE" stroke-width="6" fill="none" stroke-linecap="round"/>
-                                <ellipse cx="20" cy="70" rx="55" ry="35" fill="#739072"/>
-                                <circle cx="65" cy="55" r="28" fill="#ECE3CE"/>
-                                <circle cx="50" cy="35" r="12" fill="#2B1E17"/>
-                                <polygon points="85,60 110,65 85,75" fill="#E5A93C" fill-opacity="0.5"/>
-                                <circle cx="108" cy="65" r="4" fill="#2B1E17"/>
-                                <circle cx="75" cy="50" r="4" fill="#2B1E17"/>
-                                <path d="M 50 75 Q 80 85 90 60" stroke="#2B1E17" stroke-width="6" fill="none" stroke-linecap="round"/>
-
-                                <!-- Lantern -->
-                                <g transform="translate(85, 60)" class="glow-element">
-                                    <line x1="0" y1="0" x2="0" y2="25" stroke="#E5A93C" stroke-width="3"/>
-                                    <path d="M -15 25 L 15 25 L 20 60 L -20 60 Z" fill="#2B1E17" stroke="#E5A93C" stroke-width="2"/>
-                                    <path d="M -10 30 L 10 30 L 14 55 L -14 55 Z" fill="#FFB100"/>
-                                    <circle cx="0" cy="42" r="8" fill="#FFF" class="pulse-amber"/>
-                                </g>
-                            </g>
-
-                            <!-- Gradient Definitions -->
-                            <defs>
-                                <radialGradient id="lanternGlow" cx="50%" cy="50%" r="50%">
-                                    <stop offset="0%" stop-color="#FFB100" stop-opacity="0.6"/>
-                                    <stop offset="50%" stop-color="#E5A93C" stop-opacity="0.2"/>
-                                    <stop offset="100%" stop-color="#1C130E" stop-opacity="0"/>
-                                </radialGradient>
-                            </defs>
-                        </svg>
-
-                        <!-- Overlay Caption -->
-                        <div class="absolute bottom-4 left-4 right-4 bg-bark/80 backdrop-blur-md p-4 rounded-xl border border-warmGold/30 flex items-center justify-between">
-                            <div>
-                                <h3 class="font-heading text-parchment text-sm sm:text-base">The Lantern & The Hollow</h3>
-                                <p class="text-xs text-warmGold/80">Digital Storybook Painting • Branch Campbell</p>
+                        <!-- Elegant Fallback Placeholder Frame (Displays if hero-art.jpg isn't uploaded yet) -->
+                        <div id="hero-placeholder" class="hidden flex flex-col items-center justify-center text-center p-8 space-y-4 text-warmGold/60">
+                            <i class="fa-solid fa-palette text-5xl text-amberGlow/60"></i>
+                            <div class="space-y-1">
+                                <p class="font-heading text-lg text-parchment">Original Artwork Frame</p>
+                                <p class="text-xs font-mono text-softCream/50">Upload <code class="text-amberGlow">hero-art.jpg</code> to your repository to display here</p>
                             </div>
-                            <i class="fa-solid fa-feather-pointed text-amberGlow text-xl"></i>
                         </div>
+
                     </div>
 
-                    <p class="text-center text-sm sm:text-base text-softCream/90 italic font-heading mt-6 leading-relaxed">
+                    <p class="text-center text-xs sm:text-sm text-softCream/90 italic font-heading mt-6 leading-relaxed">
                         "In the quiet corners of the forest, every light carries a message, and every creature has a story waiting to be told."
                     </p>
                 </div>
             </section>
 
-            <!-- CONNECT WITH ME / QUICK LINKS SECTION -->
-            <section class="space-y-6">
+            <!-- PORTFOLIO GALLERY SLOTS -->
+            <section id="gallery" class="space-y-8">
+                <div class="text-center space-y-2">
+                    <h2 class="font-serif text-2xl sm:text-3xl text-parchment font-bold">Portfolio & Sketchbook</h2>
+                    <p class="text-xs sm:text-sm text-warmGold/80">A collection of studies, sketches, and finished illustrations.</p>
+                </div>
+
+                <!-- 3-Column Grid for Artwork -->
+                <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6">
+                    
+                    <!-- Gallery Item 1 -->
+                    <div class="bg-bark/80 rounded-2xl p-4 art-frame flex flex-col space-y-3 group hover:border-amberGlow transition-all">
+                        <div class="aspect-square rounded-xl bg-cozyShadow flex items-center justify-center overflow-hidden relative">
+                            <img src="gallery-1.jpg" alt="Original Illustration" class="w-full h-full object-cover z-10"
+                                 onerror="this.onerror=null; this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
+                            <div class="hidden flex flex-col items-center justify-center text-center p-4 text-warmGold/50">
+                                <i class="fa-solid fa-image text-3xl mb-2 text-amberGlow/40"></i>
+                                <span class="text-xs font-mono">gallery-1.jpg</span>
+                            </div>
+                        </div>
+                        <div class="text-center pt-1">
+                            <h3 class="font-heading text-sm text-parchment">Illustration Study I</h3>
+                            <p class="text-[11px] text-warmGold/70 italic">Original Work</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 2 -->
+                    <div class="bg-bark/80 rounded-2xl p-4 art-frame flex flex-col space-y-3 group hover:border-amberGlow transition-all">
+                        <div class="aspect-square rounded-xl bg-cozyShadow flex items-center justify-center overflow-hidden relative">
+                            <img src="gallery-2.jpg" alt="Original Illustration" class="w-full h-full object-cover z-10"
+                                 onerror="this.onerror=null; this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
+                            <div class="hidden flex flex-col items-center justify-center text-center p-4 text-warmGold/50">
+                                <i class="fa-solid fa-image text-3xl mb-2 text-amberGlow/40"></i>
+                                <span class="text-xs font-mono">gallery-2.jpg</span>
+                            </div>
+                        </div>
+                        <div class="text-center pt-1">
+                            <h3 class="font-heading text-sm text-parchment">Character Study II</h3>
+                            <p class="text-[11px] text-warmGold/70 italic">Original Work</p>
+                        </div>
+                    </div>
+
+                    <!-- Gallery Item 3 -->
+                    <div class="bg-bark/80 rounded-2xl p-4 art-frame flex flex-col space-y-3 group hover:border-amberGlow transition-all">
+                        <div class="aspect-square rounded-xl bg-cozyShadow flex items-center justify-center overflow-hidden relative">
+                            <img src="gallery-3.jpg" alt="Original Illustration" class="w-full h-full object-cover z-10"
+                                 onerror="this.onerror=null; this.classList.add('hidden'); this.nextElementSibling.classList.remove('hidden');" />
+                            <div class="hidden flex flex-col items-center justify-center text-center p-4 text-warmGold/50">
+                                <i class="fa-solid fa-image text-3xl mb-2 text-amberGlow/40"></i>
+                                <span class="text-xs font-mono">gallery-3.jpg</span>
+                            </div>
+                        </div>
+                        <div class="text-center pt-1">
+                            <h3 class="font-heading text-sm text-parchment">Sketchbook Notes</h3>
+                            <p class="text-[11px] text-warmGold/70 italic">Original Work</p>
+                        </div>
+                    </div>
+
+                </div>
+            </section>
+
+            <!-- PHILOSOPHY / JOURNEY SECTION -->
+            <section class="bg-gradient-to-br from-moss/40 via-bark/90 to-cozyShadow p-6 sm:p-8 rounded-3xl border border-warmGold/30 relative overflow-hidden text-center space-y-4">
+                <span class="text-xs uppercase tracking-widest text-amberGlow font-bold">Artist Philosophy & Growth</span>
+                <h2 class="font-serif text-2xl sm:text-3xl text-parchment">The Learning Journey</h2>
+                <blockquote class="font-heading text-lg sm:text-xl text-warmGold italic max-w-xl mx-auto">
+                    "Every great artist started with a single line."
+                </blockquote>
+                <p class="text-xs sm:text-sm text-softCream/90 leading-relaxed max-w-2xl mx-auto pt-2">
+                    Drawing isn't an overnight mystery—it is built line by line through practice, love, and continuous curiosity. From early shape exercises to live observational studies, dedication transforms every mark into story.
+                </p>
+            </section>
+
+            <!-- CONNECT / SOCIAL LINKS SECTION -->
+            <section id="connect" class="space-y-6">
                 <div class="text-center">
                     <h2 class="font-serif text-2xl sm:text-3xl text-parchment font-bold">Connect With Me</h2>
-                    <p class="text-xs sm:text-sm text-warmGold/80 mt-1">Explore my digital card, Instagram portfolio, and direct contact options!</p>
+                    <p class="text-xs sm:text-sm text-warmGold/80 mt-1">Direct links to my digital card, portfolio social feed, and email.</p>
                 </div>
 
                 <div class="grid grid-cols-1 md:grid-cols-3 gap-4">
@@ -209,7 +242,7 @@ Website Coming Soon!<!DOCTYPE html>
                             <i class="fa-solid fa-id-card text-2xl text-amberGlow"></i>
                         </div>
                         <h3 class="font-heading text-lg text-parchment mb-1">Dot Profile</h3>
-                        <p class="text-xs text-softCream/70 mb-4">View my official digital contact card directly on your phone.</p>
+                        <p class="text-xs text-softCream/70 mb-4">View my official digital contact card and save it straight to your device.</p>
                         <span class="mt-auto inline-flex items-center gap-2 text-xs font-bold text-amberGlow group-hover:underline">
                             Open Profile <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
                         </span>
@@ -222,7 +255,7 @@ Website Coming Soon!<!DOCTYPE html>
                             <i class="fa-brands fa-instagram text-2xl text-amberGlow"></i>
                         </div>
                         <h3 class="font-heading text-lg text-parchment mb-1">Instagram</h3>
-                        <p class="text-xs text-softCream/70 mb-4">@branchandpencil • Sketchbook time-lapses & park studies!</p>
+                        <p class="text-xs text-softCream/70 mb-4">Follow along for sketchbook studies and process updates!</p>
                         <span class="mt-auto inline-flex items-center gap-2 text-xs font-bold text-amberGlow group-hover:underline">
                             Follow Along <i class="fa-solid fa-arrow-up-right-from-square text-[10px]"></i>
                         </span>
@@ -235,40 +268,12 @@ Website Coming Soon!<!DOCTYPE html>
                             <i class="fa-solid fa-envelope text-2xl text-amberGlow"></i>
                         </div>
                         <h3 class="font-heading text-lg text-parchment mb-1">Direct Email</h3>
-                        <p class="text-xs text-softCream/70 mb-4">Have a storybook project, commission, or artistic query? Reach out anytime!</p>
+                        <p class="text-xs text-softCream/70 mb-4">Have a storybook project or creative collaboration in mind? Reach out anytime!</p>
                         <span class="mt-auto inline-flex items-center gap-2 text-xs font-bold text-amberGlow group-hover:underline">
                             Send Email <i class="fa-solid fa-paper-plane text-[10px]"></i>
                         </span>
                     </a>
 
-                </div>
-            </section>
-
-            <!-- THE LEARNING JOURNEY SECTION -->
-            <section class="bg-gradient-to-br from-moss/40 via-bark/90 to-cozyShadow p-6 sm:p-8 rounded-3xl border border-warmGold/30 relative overflow-hidden">
-                <div class="absolute -right-10 -bottom-10 opacity-10 text-warmGold text-9xl pointer-events-none">
-                    <i class="fa-solid fa-compass-drafting"></i>
-                </div>
-
-                <div class="max-w-2xl mx-auto text-center space-y-4 relative z-10">
-                    <span class="text-xs uppercase tracking-widest text-amberGlow font-bold">Artist Philosophy & Growth</span>
-                    
-                    <h2 class="font-serif text-2xl sm:text-3xl text-parchment">The Learning Journey</h2>
-                    
-                    <blockquote class="font-heading text-lg sm:text-xl text-warmGold italic">
-                        "Every great artist started with a single line."
-                    </blockquote>
-
-                    <p class="text-xs sm:text-sm text-softCream/90 leading-relaxed pt-2">
-                        Drawing isn't an overnight mystery—it is built line by line through practice, love, and continuous curiosity. From early basic shape exercises to live model studies of character costume construction on Main Street, I believe anyone can learn to draw with dedication.
-                    </p>
-
-                    <div class="pt-4 flex justify-center">
-                        <div class="inline-flex items-center gap-3 px-4 py-2 rounded-full bg-bark/80 border border-warmGold/20 text-xs text-warmGold">
-                            <i class="fa-solid fa-palette text-amberGlow"></i>
-                            <span>Full Sketchbook Evolution & Growth Timeline Coming Soon</span>
-                        </div>
-                    </div>
                 </div>
             </section>
 
@@ -284,7 +289,7 @@ Website Coming Soon!<!DOCTYPE html>
                 </div>
                 <p>© 2026 Branch & Pencil. All rights reserved.</p>
                 <p class="text-[10px] text-softCream/40 max-w-md leading-normal">
-                    All character studies and references created for educational skill development and artistic appreciation.
+                    All original artwork and creative studies protected under copyright.
                 </p>
             </div>
         </footer>
